@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A1C1A941D1439EC005BCE6A /* GStreamerBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1C1A881D1439EC005BCE6A /* GStreamerBackend.m */; };
+		3A1C1A951D1439EC005BCE6A /* gst_ios_init.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1C1A891D1439EC005BCE6A /* gst_ios_init.m */; };
+		3A1C1A961D1439EC005BCE6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1C1A8C1D1439EC005BCE6A /* AppDelegate.m */; };
+		3A1C1A981D1439EC005BCE6A /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1C1A921D1439EC005BCE6A /* VideoViewController.m */; };
+		3A1C1AAC1D143A73005BCE6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1C1AA31D143A73005BCE6A /* main.m */; };
+		3A1C1AB11D143A73005BCE6A /* fonts.conf in Resources */ = {isa = PBXBuildFile; fileRef = 3A1C1AA91D143A73005BCE6A /* fonts.conf */; };
+		3A1C1AB21D143A73005BCE6A /* Ubuntu-R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A1C1AAB1D143A73005BCE6A /* Ubuntu-R.ttf */; };
+		3A1C1AB71D143A8B005BCE6A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1C1AB31D143A8B005BCE6A /* MainStoryboard_iPhone.storyboard */; };
+		3A1C1AB81D143A8B005BCE6A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A1C1AB51D143A8B005BCE6A /* MainStoryboard_iPad.storyboard */; };
+		3A1C1ABB1D143A92005BCE6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A1C1AB91D143A92005BCE6A /* InfoPlist.strings */; };
+		3A1C1AC51D143C5C005BCE6A /* GStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1C1AC41D143C5C005BCE6A /* GStreamer.framework */; };
+		3A23DFB71D4BB6D3001CDFDF /* eye-64-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A23DFB31D4BB6D3001CDFDF /* eye-64-grey.png */; };
+		3A23DFB81D4BB6D3001CDFDF /* eye-64-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A23DFB41D4BB6D3001CDFDF /* eye-64-white.png */; };
+		3A23DFB91D4BB6D3001CDFDF /* light-64-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A23DFB51D4BB6D3001CDFDF /* light-64-grey.png */; };
+		3A23DFBA1D4BB6D3001CDFDF /* light-64-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A23DFB61D4BB6D3001CDFDF /* light-64-white.png */; };
+		3A2A109A1E005BDD0023742D /* EaglUIVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A10991E005BDD0023742D /* EaglUIVIew.m */; };
+		3A2A10A41E0213A50023742D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A10A31E0213A50023742D /* Images.xcassets */; };
+		3A2A10B51E02E0230023742D /* Fanza-logo-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A10B01E02E0230023742D /* Fanza-logo-76.png */; };
+		3A2A10B61E02E0230023742D /* Fanza-logo-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A10B11E02E0230023742D /* Fanza-logo-120.png */; };
+		3A2A10B71E02E0230023742D /* Fanza-logo-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A10B21E02E0230023742D /* Fanza-logo-152.png */; };
+		3A2A10B81E02E0230023742D /* Fanza-logo-167.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A10B31E02E0230023742D /* Fanza-logo-167.png */; };
+		3A2A10B91E02E0230023742D /* Fanza-logo-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A10B41E02E0230023742D /* Fanza-logo-180.png */; };
+		3A2A10F01E03296C0023742D /* Fanza-2732x2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A10E61E03296C0023742D /* Fanza-2732x2048.png */; };
+		3A2A10F11E03296C0023742D /* Fanza-2048x1536.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A10E71E03296C0023742D /* Fanza-2048x1536.png */; };
+		3A2A10F21E03296C0023742D /* Fanza-1536x2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A10E81E03296C0023742D /* Fanza-1536x2048.png */; };
+		3A2A10F31E03296C0023742D /* Fanza-1242x2208.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A10E91E03296C0023742D /* Fanza-1242x2208.png */; };
+		3A2A10F41E03296C0023742D /* Fanza-1024x768.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A10EA1E03296C0023742D /* Fanza-1024x768.png */; };
+		3A2A10F51E03296C0023742D /* Fanza-640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A10EB1E03296C0023742D /* Fanza-640x960.png */; };
+		3A2A10F61E03296C0023742D /* Fanza-640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A10EC1E03296C0023742D /* Fanza-640x1136.png */; };
+		3A2A10F71E03296C0023742D /* Fanza-750x1334.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A10ED1E03296C0023742D /* Fanza-750x1334.png */; };
+		3A2A10F81E03296C0023742D /* Fanza-768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A10EE1E03296C0023742D /* Fanza-768x1024.png */; };
+		3A2A10F91E03296C0023742D /* Fanza-320x480.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A10EF1E03296C0023742D /* Fanza-320x480.png */; };
+		3A2A10FB1E032C690023742D /* Fanza-2208x1242.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A2A10FA1E032C690023742D /* Fanza-2208x1242.png */; };
+		3AB7E4FB1E053B5A007BAAA5 /* Fanza-logo-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB7E4EE1E053B5A007BAAA5 /* Fanza-logo-144.png */; };
+		3AB7E4FC1E053B5A007BAAA5 /* Fanza-logo-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB7E4EF1E053B5A007BAAA5 /* Fanza-logo-72.png */; };
+		3AB7E4FD1E053B5A007BAAA5 /* Fanza-logo-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB7E4F01E053B5A007BAAA5 /* Fanza-logo-100.png */; };
+		3AB7E4FE1E053B5A007BAAA5 /* Fanza-logo-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB7E4F11E053B5A007BAAA5 /* Fanza-logo-50.png */; };
+		3AB7E4FF1E053B5A007BAAA5 /* Fanza-logo-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB7E4F21E053B5A007BAAA5 /* Fanza-logo-20.png */; };
+		3AB7E5001E053B5A007BAAA5 /* Fanza-logo-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB7E4F31E053B5A007BAAA5 /* Fanza-logo-114.png */; };
+		3AB7E5011E053B5A007BAAA5 /* Fanza-logo-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB7E4F41E053B5A007BAAA5 /* Fanza-logo-57.png */; };
+		3AB7E5021E053B5A007BAAA5 /* Fanza-logo-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB7E4F51E053B5A007BAAA5 /* Fanza-logo-80.png */; };
+		3AB7E5031E053B5A007BAAA5 /* Fanza-logo-87.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB7E4F61E053B5A007BAAA5 /* Fanza-logo-87.png */; };
+		3AB7E5041E053B5A007BAAA5 /* Fanza-logo-58.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB7E4F71E053B5A007BAAA5 /* Fanza-logo-58.png */; };
+		3AB7E5051E053B5A007BAAA5 /* Fanza-logo-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB7E4F81E053B5A007BAAA5 /* Fanza-logo-29.png */; };
+		3AB7E5061E053B5A007BAAA5 /* Fanza-logo-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB7E4F91E053B5A007BAAA5 /* Fanza-logo-60.png */; };
+		3AB7E5071E053B5A007BAAA5 /* Fanza-logo-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB7E4FA1E053B5A007BAAA5 /* Fanza-logo-40.png */; };
+		3AB7E50C1E0542CA007BAAA5 /* Fanza-2048x1496.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB7E5081E0542CA007BAAA5 /* Fanza-2048x1496.png */; };
+		3AB7E50D1E0542CA007BAAA5 /* Fanza-1024x748.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB7E5091E0542CA007BAAA5 /* Fanza-1024x748.png */; };
+		3AB7E50E1E0542CA007BAAA5 /* Fanza-1536x2008.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB7E50A1E0542CA007BAAA5 /* Fanza-1536x2008.png */; };
+		3AB7E50F1E0542CA007BAAA5 /* Fanza-768x1004.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AB7E50B1E0542CA007BAAA5 /* Fanza-768x1004.png */; };
+		3ACE914A1DEF65E0007AE18A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACE91491DEF65E0007AE18A /* CFNetwork.framework */; };
+		3ACE914C1DEF65F2007AE18A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACE914B1DEF65F2007AE18A /* CoreGraphics.framework */; };
+		3ACE914F1DEF6616007AE18A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACE914D1DEF6615007AE18A /* Foundation.framework */; };
+		3ACE91501DEF6616007AE18A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACE914E1DEF6616007AE18A /* UIKit.framework */; };
+		3ACE91521DEF6622007AE18A /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACE91511DEF6622007AE18A /* VideoToolbox.framework */; };
+		3ACE91541DEF6633007AE18A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACE91531DEF6633007AE18A /* libiconv.tbd */; };
+		3ACE91591DEF6681007AE18A /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACE91551DEF6642007AE18A /* libstdc++.6.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A1C1A881D1439EC005BCE6A /* GStreamerBackend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GStreamerBackend.m; path = FFC/GStreamerBackend.m; sourceTree = "<group>"; };
+		3A1C1A891D1439EC005BCE6A /* gst_ios_init.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = gst_ios_init.m; path = FFC/gst_ios_init.m; sourceTree = "<group>"; };
+		3A1C1A8A1D1439EC005BCE6A /* gst_ios_init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gst_ios_init.h; path = FFC/gst_ios_init.h; sourceTree = "<group>"; };
+		3A1C1A8B1D1439EC005BCE6A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = FFC/AppDelegate.h; sourceTree = "<group>"; };
+		3A1C1A8C1D1439EC005BCE6A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = FFC/AppDelegate.m; sourceTree = "<group>"; };
+		3A1C1A8F1D1439EC005BCE6A /* GStreamerBackend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GStreamerBackend.h; path = FFC/GStreamerBackend.h; sourceTree = "<group>"; };
+		3A1C1A911D1439EC005BCE6A /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoViewController.h; path = FFC/VideoViewController.h; sourceTree = "<group>"; };
+		3A1C1A921D1439EC005BCE6A /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoViewController.m; path = FFC/VideoViewController.m; sourceTree = "<group>"; };
+		3A1C1AA31D143A73005BCE6A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FFC/main.m; sourceTree = "<group>"; };
+		3A1C1AA71D143A73005BCE6A /* Fishing FanCam-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Fishing FanCam-Info.plist"; path = "FFC/Fishing FanCam-Info.plist"; sourceTree = "<group>"; };
+		3A1C1AA81D143A73005BCE6A /* Fishing FanCam-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Fishing FanCam-Prefix.pch"; path = "FFC/Fishing FanCam-Prefix.pch"; sourceTree = "<group>"; };
+		3A1C1AA91D143A73005BCE6A /* fonts.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = fonts.conf; path = FFC/fonts.conf; sourceTree = "<group>"; };
+		3A1C1AAA1D143A73005BCE6A /* GStreamerBackendDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GStreamerBackendDelegate.h; path = FFC/GStreamerBackendDelegate.h; sourceTree = "<group>"; };
+		3A1C1AAB1D143A73005BCE6A /* Ubuntu-R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ubuntu-R.ttf"; path = "FFC/Ubuntu-R.ttf"; sourceTree = "<group>"; };
+		3A1C1AB41D143A8B005BCE6A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = FFC/en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		3A1C1AB61D143A8B005BCE6A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = FFC/en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		3A1C1ABA1D143A92005BCE6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = FFC/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3A1C1AC41D143C5C005BCE6A /* GStreamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GStreamer.framework; path = ../Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework; sourceTree = "<group>"; };
+		3A23DFB31D4BB6D3001CDFDF /* eye-64-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye-64-grey.png"; sourceTree = "<group>"; };
+		3A23DFB41D4BB6D3001CDFDF /* eye-64-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eye-64-white.png"; sourceTree = "<group>"; };
+		3A23DFB51D4BB6D3001CDFDF /* light-64-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "light-64-grey.png"; sourceTree = "<group>"; };
+		3A23DFB61D4BB6D3001CDFDF /* light-64-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "light-64-white.png"; sourceTree = "<group>"; };
+		3A2A10981E005BDD0023742D /* EaglUIVIew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EaglUIVIew.h; path = FFC/EaglUIVIew.h; sourceTree = "<group>"; };
+		3A2A10991E005BDD0023742D /* EaglUIVIew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EaglUIVIew.m; path = FFC/EaglUIVIew.m; sourceTree = "<group>"; };
+		3A2A10A31E0213A50023742D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Fanza/Images.xcassets; sourceTree = "<group>"; };
+		3A2A10B01E02E0230023742D /* Fanza-logo-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-logo-76.png"; path = "FFC/AppIcons/Fanza-logo-76.png"; sourceTree = "<group>"; };
+		3A2A10B11E02E0230023742D /* Fanza-logo-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-logo-120.png"; path = "FFC/AppIcons/Fanza-logo-120.png"; sourceTree = "<group>"; };
+		3A2A10B21E02E0230023742D /* Fanza-logo-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-logo-152.png"; path = "FFC/AppIcons/Fanza-logo-152.png"; sourceTree = "<group>"; };
+		3A2A10B31E02E0230023742D /* Fanza-logo-167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-logo-167.png"; path = "FFC/AppIcons/Fanza-logo-167.png"; sourceTree = "<group>"; };
+		3A2A10B41E02E0230023742D /* Fanza-logo-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-logo-180.png"; path = "FFC/AppIcons/Fanza-logo-180.png"; sourceTree = "<group>"; };
+		3A2A10E61E03296C0023742D /* Fanza-2732x2048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-2732x2048.png"; path = "FFC/LaunchImages/Fanza-2732x2048.png"; sourceTree = "<group>"; };
+		3A2A10E71E03296C0023742D /* Fanza-2048x1536.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-2048x1536.png"; path = "FFC/LaunchImages/Fanza-2048x1536.png"; sourceTree = "<group>"; };
+		3A2A10E81E03296C0023742D /* Fanza-1536x2048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-1536x2048.png"; path = "FFC/LaunchImages/Fanza-1536x2048.png"; sourceTree = "<group>"; };
+		3A2A10E91E03296C0023742D /* Fanza-1242x2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-1242x2208.png"; path = "FFC/LaunchImages/Fanza-1242x2208.png"; sourceTree = "<group>"; };
+		3A2A10EA1E03296C0023742D /* Fanza-1024x768.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-1024x768.png"; path = "FFC/LaunchImages/Fanza-1024x768.png"; sourceTree = "<group>"; };
+		3A2A10EB1E03296C0023742D /* Fanza-640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-640x960.png"; path = "FFC/LaunchImages/Fanza-640x960.png"; sourceTree = "<group>"; };
+		3A2A10EC1E03296C0023742D /* Fanza-640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-640x1136.png"; path = "FFC/LaunchImages/Fanza-640x1136.png"; sourceTree = "<group>"; };
+		3A2A10ED1E03296C0023742D /* Fanza-750x1334.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-750x1334.png"; path = "FFC/LaunchImages/Fanza-750x1334.png"; sourceTree = "<group>"; };
+		3A2A10EE1E03296C0023742D /* Fanza-768x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-768x1024.png"; path = "FFC/LaunchImages/Fanza-768x1024.png"; sourceTree = "<group>"; };
+		3A2A10EF1E03296C0023742D /* Fanza-320x480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-320x480.png"; path = "FFC/LaunchImages/Fanza-320x480.png"; sourceTree = "<group>"; };
+		3A2A10FA1E032C690023742D /* Fanza-2208x1242.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-2208x1242.png"; path = "FFC/LaunchImages/Fanza-2208x1242.png"; sourceTree = "<group>"; };
+		3AB7E4EE1E053B5A007BAAA5 /* Fanza-logo-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-logo-144.png"; path = "FFC/AppIcons/Fanza-logo-144.png"; sourceTree = "<group>"; };
+		3AB7E4EF1E053B5A007BAAA5 /* Fanza-logo-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-logo-72.png"; path = "FFC/AppIcons/Fanza-logo-72.png"; sourceTree = "<group>"; };
+		3AB7E4F01E053B5A007BAAA5 /* Fanza-logo-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-logo-100.png"; path = "FFC/AppIcons/Fanza-logo-100.png"; sourceTree = "<group>"; };
+		3AB7E4F11E053B5A007BAAA5 /* Fanza-logo-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-logo-50.png"; path = "FFC/AppIcons/Fanza-logo-50.png"; sourceTree = "<group>"; };
+		3AB7E4F21E053B5A007BAAA5 /* Fanza-logo-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-logo-20.png"; path = "FFC/AppIcons/Fanza-logo-20.png"; sourceTree = "<group>"; };
+		3AB7E4F31E053B5A007BAAA5 /* Fanza-logo-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-logo-114.png"; path = "FFC/AppIcons/Fanza-logo-114.png"; sourceTree = "<group>"; };
+		3AB7E4F41E053B5A007BAAA5 /* Fanza-logo-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-logo-57.png"; path = "FFC/AppIcons/Fanza-logo-57.png"; sourceTree = "<group>"; };
+		3AB7E4F51E053B5A007BAAA5 /* Fanza-logo-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-logo-80.png"; path = "FFC/AppIcons/Fanza-logo-80.png"; sourceTree = "<group>"; };
+		3AB7E4F61E053B5A007BAAA5 /* Fanza-logo-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-logo-87.png"; path = "FFC/AppIcons/Fanza-logo-87.png"; sourceTree = "<group>"; };
+		3AB7E4F71E053B5A007BAAA5 /* Fanza-logo-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-logo-58.png"; path = "FFC/AppIcons/Fanza-logo-58.png"; sourceTree = "<group>"; };
+		3AB7E4F81E053B5A007BAAA5 /* Fanza-logo-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-logo-29.png"; path = "FFC/AppIcons/Fanza-logo-29.png"; sourceTree = "<group>"; };
+		3AB7E4F91E053B5A007BAAA5 /* Fanza-logo-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-logo-60.png"; path = "FFC/AppIcons/Fanza-logo-60.png"; sourceTree = "<group>"; };
+		3AB7E4FA1E053B5A007BAAA5 /* Fanza-logo-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-logo-40.png"; path = "FFC/AppIcons/Fanza-logo-40.png"; sourceTree = "<group>"; };
+		3AB7E5081E0542CA007BAAA5 /* Fanza-2048x1496.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-2048x1496.png"; path = "FFC/LaunchImages/Fanza-2048x1496.png"; sourceTree = "<group>"; };
+		3AB7E5091E0542CA007BAAA5 /* Fanza-1024x748.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-1024x748.png"; path = "FFC/LaunchImages/Fanza-1024x748.png"; sourceTree = "<group>"; };
+		3AB7E50A1E0542CA007BAAA5 /* Fanza-1536x2008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-1536x2008.png"; path = "FFC/LaunchImages/Fanza-1536x2008.png"; sourceTree = "<group>"; };
+		3AB7E50B1E0542CA007BAAA5 /* Fanza-768x1004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fanza-768x1004.png"; path = "FFC/LaunchImages/Fanza-768x1004.png"; sourceTree = "<group>"; };
+		3ACE91491DEF65E0007AE18A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		3ACE914B1DEF65F2007AE18A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		3ACE914D1DEF6615007AE18A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3ACE914E1DEF6616007AE18A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3ACE91511DEF6622007AE18A /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/System/Library/Frameworks/VideoToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		3ACE91531DEF6633007AE18A /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
+		3ACE91551DEF6642007AE18A /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib/libstdc++.6.tbd"; sourceTree = DEVELOPER_DIR; };
+		3ACE91571DEF6666007AE18A /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/usr/lib/libstdc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		3AE96CD91E073A6C00A0866B /* Fishing FanCam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Fishing FanCam.entitlements"; sourceTree = "<group>"; };
+		C68B1D8817465EB7004FD7D0 /* Fishing FanCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fishing FanCam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C68B1D8517465EB7004FD7D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ACE91591DEF6681007AE18A /* libstdc++.6.tbd in Frameworks */,
+				3ACE91541DEF6633007AE18A /* libiconv.tbd in Frameworks */,
+				3ACE91521DEF6622007AE18A /* VideoToolbox.framework in Frameworks */,
+				3ACE914F1DEF6616007AE18A /* Foundation.framework in Frameworks */,
+				3ACE91501DEF6616007AE18A /* UIKit.framework in Frameworks */,
+				3ACE914C1DEF65F2007AE18A /* CoreGraphics.framework in Frameworks */,
+				3ACE914A1DEF65E0007AE18A /* CFNetwork.framework in Frameworks */,
+				3A1C1AC51D143C5C005BCE6A /* GStreamer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A1C1A861D1439B0005BCE6A /* MainClasses */ = {
+			isa = PBXGroup;
+			children = (
+				3A2A10981E005BDD0023742D /* EaglUIVIew.h */,
+				3A2A10991E005BDD0023742D /* EaglUIVIew.m */,
+				3A23DFB31D4BB6D3001CDFDF /* eye-64-grey.png */,
+				3A23DFB41D4BB6D3001CDFDF /* eye-64-white.png */,
+				3A23DFB51D4BB6D3001CDFDF /* light-64-grey.png */,
+				3A23DFB61D4BB6D3001CDFDF /* light-64-white.png */,
+				3A1C1AB31D143A8B005BCE6A /* MainStoryboard_iPhone.storyboard */,
+				3A1C1AB51D143A8B005BCE6A /* MainStoryboard_iPad.storyboard */,
+				3A1C1A8B1D1439EC005BCE6A /* AppDelegate.h */,
+				3A1C1A8C1D1439EC005BCE6A /* AppDelegate.m */,
+				3A1C1A8F1D1439EC005BCE6A /* GStreamerBackend.h */,
+				3A1C1A881D1439EC005BCE6A /* GStreamerBackend.m */,
+				3A1C1A911D1439EC005BCE6A /* VideoViewController.h */,
+				3A1C1A921D1439EC005BCE6A /* VideoViewController.m */,
+				3A2A10AF1E02DE6F0023742D /* LaunchImages */,
+				3A1C1A991D143A12005BCE6A /* AppIcons */,
+				3A1C1AA21D143A43005BCE6A /* Supporting Files */,
+			);
+			name = MainClasses;
+			sourceTree = "<group>";
+		};
+		3A1C1A991D143A12005BCE6A /* AppIcons */ = {
+			isa = PBXGroup;
+			children = (
+				3AB7E4EE1E053B5A007BAAA5 /* Fanza-logo-144.png */,
+				3AB7E4EF1E053B5A007BAAA5 /* Fanza-logo-72.png */,
+				3AB7E4F01E053B5A007BAAA5 /* Fanza-logo-100.png */,
+				3AB7E4F11E053B5A007BAAA5 /* Fanza-logo-50.png */,
+				3AB7E4F21E053B5A007BAAA5 /* Fanza-logo-20.png */,
+				3AB7E4F31E053B5A007BAAA5 /* Fanza-logo-114.png */,
+				3AB7E4F41E053B5A007BAAA5 /* Fanza-logo-57.png */,
+				3AB7E4F51E053B5A007BAAA5 /* Fanza-logo-80.png */,
+				3AB7E4F61E053B5A007BAAA5 /* Fanza-logo-87.png */,
+				3AB7E4F71E053B5A007BAAA5 /* Fanza-logo-58.png */,
+				3AB7E4F81E053B5A007BAAA5 /* Fanza-logo-29.png */,
+				3AB7E4F91E053B5A007BAAA5 /* Fanza-logo-60.png */,
+				3AB7E4FA1E053B5A007BAAA5 /* Fanza-logo-40.png */,
+				3A2A10B01E02E0230023742D /* Fanza-logo-76.png */,
+				3A2A10B11E02E0230023742D /* Fanza-logo-120.png */,
+				3A2A10B21E02E0230023742D /* Fanza-logo-152.png */,
+				3A2A10B31E02E0230023742D /* Fanza-logo-167.png */,
+				3A2A10B41E02E0230023742D /* Fanza-logo-180.png */,
+			);
+			name = AppIcons;
+			sourceTree = "<group>";
+		};
+		3A1C1AA21D143A43005BCE6A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A1C1AB91D143A92005BCE6A /* InfoPlist.strings */,
+				3A1C1AA31D143A73005BCE6A /* main.m */,
+				3A1C1A8A1D1439EC005BCE6A /* gst_ios_init.h */,
+				3A1C1A891D1439EC005BCE6A /* gst_ios_init.m */,
+				3A1C1AA71D143A73005BCE6A /* Fishing FanCam-Info.plist */,
+				3A1C1AA81D143A73005BCE6A /* Fishing FanCam-Prefix.pch */,
+				3A1C1AA91D143A73005BCE6A /* fonts.conf */,
+				3A1C1AAA1D143A73005BCE6A /* GStreamerBackendDelegate.h */,
+				3A1C1AAB1D143A73005BCE6A /* Ubuntu-R.ttf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A2A10AF1E02DE6F0023742D /* LaunchImages */ = {
+			isa = PBXGroup;
+			children = (
+				3AB7E5081E0542CA007BAAA5 /* Fanza-2048x1496.png */,
+				3AB7E5091E0542CA007BAAA5 /* Fanza-1024x748.png */,
+				3AB7E50A1E0542CA007BAAA5 /* Fanza-1536x2008.png */,
+				3AB7E50B1E0542CA007BAAA5 /* Fanza-768x1004.png */,
+				3A2A10FA1E032C690023742D /* Fanza-2208x1242.png */,
+				3A2A10E61E03296C0023742D /* Fanza-2732x2048.png */,
+				3A2A10E71E03296C0023742D /* Fanza-2048x1536.png */,
+				3A2A10E81E03296C0023742D /* Fanza-1536x2048.png */,
+				3A2A10E91E03296C0023742D /* Fanza-1242x2208.png */,
+				3A2A10EA1E03296C0023742D /* Fanza-1024x768.png */,
+				3A2A10EB1E03296C0023742D /* Fanza-640x960.png */,
+				3A2A10EC1E03296C0023742D /* Fanza-640x1136.png */,
+				3A2A10ED1E03296C0023742D /* Fanza-750x1334.png */,
+				3A2A10EE1E03296C0023742D /* Fanza-768x1024.png */,
+				3A2A10EF1E03296C0023742D /* Fanza-320x480.png */,
+			);
+			name = LaunchImages;
+			sourceTree = "<group>";
+		};
+		C67B40BE172EBDF1008359CC = {
+			isa = PBXGroup;
+			children = (
+				3AE96CD91E073A6C00A0866B /* Fishing FanCam.entitlements */,
+				3A2A10A31E0213A50023742D /* Images.xcassets */,
+				3A1C1A861D1439B0005BCE6A /* MainClasses */,
+				C67B40CB172EBEA3008359CC /* Frameworks */,
+				C67B40CA172EBEA3008359CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C67B40CA172EBEA3008359CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C68B1D8817465EB7004FD7D0 /* Fishing FanCam.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C67B40CB172EBEA3008359CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3ACE91571DEF6666007AE18A /* libstdc++.tbd */,
+				3ACE91551DEF6642007AE18A /* libstdc++.6.tbd */,
+				3ACE91531DEF6633007AE18A /* libiconv.tbd */,
+				3ACE91511DEF6622007AE18A /* VideoToolbox.framework */,
+				3ACE914D1DEF6615007AE18A /* Foundation.framework */,
+				3ACE914E1DEF6616007AE18A /* UIKit.framework */,
+				3ACE914B1DEF65F2007AE18A /* CoreGraphics.framework */,
+				3ACE91491DEF65E0007AE18A /* CFNetwork.framework */,
+				3A1C1AC41D143C5C005BCE6A /* GStreamer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C68B1D8717465EB7004FD7D0 /* Fishing FanCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C68B1DAD17465EB8004FD7D0 /* Build configuration list for PBXNativeTarget "Fishing FanCam" */;
+			buildPhases = (
+				C68B1D8417465EB7004FD7D0 /* Sources */,
+				C68B1D8517465EB7004FD7D0 /* Frameworks */,
+				C68B1D8617465EB7004FD7D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fishing FanCam";
+			productName = "Tutorial 5";
+			productReference = C68B1D8817465EB7004FD7D0 /* Fishing FanCam.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C67B40BF172EBDF1008359CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				TargetAttributes = {
+					C68B1D8717465EB7004FD7D0 = {
+						DevelopmentTeam = HE925QSJT5;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C67B40C2172EBDF1008359CC /* Build configuration list for PBXProject "Fishing FanCam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C67B40BE172EBDF1008359CC;
+			productRefGroup = C67B40CA172EBEA3008359CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C68B1D8717465EB7004FD7D0 /* Fishing FanCam */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C68B1D8617465EB7004FD7D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A2A10F91E03296C0023742D /* Fanza-320x480.png in Resources */,
+				3A2A10F21E03296C0023742D /* Fanza-1536x2048.png in Resources */,
+				3A2A10F31E03296C0023742D /* Fanza-1242x2208.png in Resources */,
+				3AB7E50F1E0542CA007BAAA5 /* Fanza-768x1004.png in Resources */,
+				3A1C1AB81D143A8B005BCE6A /* MainStoryboard_iPad.storyboard in Resources */,
+				3A2A10B71E02E0230023742D /* Fanza-logo-152.png in Resources */,
+				3AB7E5071E053B5A007BAAA5 /* Fanza-logo-40.png in Resources */,
+				3AB7E5031E053B5A007BAAA5 /* Fanza-logo-87.png in Resources */,
+				3AB7E5011E053B5A007BAAA5 /* Fanza-logo-57.png in Resources */,
+				3A1C1AB11D143A73005BCE6A /* fonts.conf in Resources */,
+				3A23DFBA1D4BB6D3001CDFDF /* light-64-white.png in Resources */,
+				3A23DFB71D4BB6D3001CDFDF /* eye-64-grey.png in Resources */,
+				3A2A10F61E03296C0023742D /* Fanza-640x1136.png in Resources */,
+				3AB7E50E1E0542CA007BAAA5 /* Fanza-1536x2008.png in Resources */,
+				3AB7E4FF1E053B5A007BAAA5 /* Fanza-logo-20.png in Resources */,
+				3AB7E50C1E0542CA007BAAA5 /* Fanza-2048x1496.png in Resources */,
+				3A2A10F11E03296C0023742D /* Fanza-2048x1536.png in Resources */,
+				3A1C1ABB1D143A92005BCE6A /* InfoPlist.strings in Resources */,
+				3AB7E4FB1E053B5A007BAAA5 /* Fanza-logo-144.png in Resources */,
+				3AB7E4FC1E053B5A007BAAA5 /* Fanza-logo-72.png in Resources */,
+				3A2A10B81E02E0230023742D /* Fanza-logo-167.png in Resources */,
+				3AB7E5061E053B5A007BAAA5 /* Fanza-logo-60.png in Resources */,
+				3AB7E4FE1E053B5A007BAAA5 /* Fanza-logo-50.png in Resources */,
+				3A2A10F01E03296C0023742D /* Fanza-2732x2048.png in Resources */,
+				3A2A10B91E02E0230023742D /* Fanza-logo-180.png in Resources */,
+				3A2A10B51E02E0230023742D /* Fanza-logo-76.png in Resources */,
+				3A23DFB91D4BB6D3001CDFDF /* light-64-grey.png in Resources */,
+				3A2A10F71E03296C0023742D /* Fanza-750x1334.png in Resources */,
+				3A2A10F51E03296C0023742D /* Fanza-640x960.png in Resources */,
+				3AB7E5021E053B5A007BAAA5 /* Fanza-logo-80.png in Resources */,
+				3AB7E5001E053B5A007BAAA5 /* Fanza-logo-114.png in Resources */,
+				3AB7E50D1E0542CA007BAAA5 /* Fanza-1024x748.png in Resources */,
+				3AB7E5051E053B5A007BAAA5 /* Fanza-logo-29.png in Resources */,
+				3A2A10B61E02E0230023742D /* Fanza-logo-120.png in Resources */,
+				3AB7E4FD1E053B5A007BAAA5 /* Fanza-logo-100.png in Resources */,
+				3A2A10A41E0213A50023742D /* Images.xcassets in Resources */,
+				3A1C1AB71D143A8B005BCE6A /* MainStoryboard_iPhone.storyboard in Resources */,
+				3A23DFB81D4BB6D3001CDFDF /* eye-64-white.png in Resources */,
+				3A2A10FB1E032C690023742D /* Fanza-2208x1242.png in Resources */,
+				3AB7E5041E053B5A007BAAA5 /* Fanza-logo-58.png in Resources */,
+				3A2A10F41E03296C0023742D /* Fanza-1024x768.png in Resources */,
+				3A2A10F81E03296C0023742D /* Fanza-768x1024.png in Resources */,
+				3A1C1AB21D143A73005BCE6A /* Ubuntu-R.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C68B1D8417465EB7004FD7D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A1C1A961D1439EC005BCE6A /* AppDelegate.m in Sources */,
+				3A1C1A981D1439EC005BCE6A /* VideoViewController.m in Sources */,
+				3A1C1A941D1439EC005BCE6A /* GStreamerBackend.m in Sources */,
+				3A2A109A1E005BDD0023742D /* EaglUIVIew.m in Sources */,
+				3A1C1AAC1D143A73005BCE6A /* main.m in Sources */,
+				3A1C1A951D1439EC005BCE6A /* gst_ios_init.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3A1C1AB31D143A8B005BCE6A /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A1C1AB41D143A8B005BCE6A /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		3A1C1AB51D143A8B005BCE6A /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A1C1AB61D143A8B005BCE6A /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		3A1C1AB91D143A92005BCE6A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A1C1ABA1D143A92005BCE6A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C67B40C3172EBDF1008359CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		C67B40C4172EBDF1008359CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		C68B1DAB17465EB8004FD7D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = BrandAppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandLaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = HE925QSJT5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Library/Developer/GStreamer/iPhone.sdk",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"$(USER_LIBRARY_DIR)/Developer/GStreamer/iPhone.sdk",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FFC/Fishing FanCam-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"~/Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework/Headers\"";
+				INFOPLIST_FILE = "FFC/Fishing FanCam-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_NO_PIE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lresolv",
+					"-lstdc++",
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					Foundation,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					CoreAudio,
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					OpenGLES,
+					"-framework",
+					AssetsLibrary,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					AssetsLibrary,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fishingfancam.player;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C68B1DAC17465EB8004FD7D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = BrandAppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandLaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = HE925QSJT5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Library/Developer/GStreamer/iPhone.sdk",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"$(USER_LIBRARY_DIR)/Developer/GStreamer/iPhone.sdk",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FFC/Fishing FanCam-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"~/Library/Developer/GStreamer/iPhone.sdk/GStreamer.framework/Headers\"";
+				INFOPLIST_FILE = "FFC/Fishing FanCam-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_NO_PIE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-lresolv",
+					"-lstdc++",
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					Foundation,
+					"-framework",
+					AVFoundation,
+					"-framework",
+					CoreMedia,
+					"-framework",
+					CoreVideo,
+					"-framework",
+					CoreAudio,
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					OpenGLES,
+					"-framework",
+					AssetsLibrary,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					AssetsLibrary,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fishingfancam.player;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C67B40C2172EBDF1008359CC /* Build configuration list for PBXProject "Fishing FanCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C67B40C3172EBDF1008359CC /* Debug */,
+				C67B40C4172EBDF1008359CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C68B1DAD17465EB8004FD7D0 /* Build configuration list for PBXNativeTarget "Fishing FanCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C68B1DAB17465EB8004FD7D0 /* Debug */,
+				C68B1DAC17465EB8004FD7D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C67B40BF172EBDF1008359CC /* Project object */;
+}
